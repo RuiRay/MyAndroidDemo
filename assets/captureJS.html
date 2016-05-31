@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>Webview capture testing...</title>
+<script type="text/javascript">
+
+        //android中调用js方法
+        function wave() {
+                alert('cc2');
+            document.getElementById("droid").innerHTML ="android_waving.png";
+        }
+        
+        //android中调用js方法2，并更id为"droid"的span标签的值及新刚拍的照片显示到"pic0"里
+        function wave2(name) {
+                alert(name);
+                 document.getElementById("droid").innerHTML = "Photopath: " + name;
+                 document.getElementById("pic0").src=name;
+        }
+        
+        //html的点击事件，并通过"window.demo.clickOnAndroid"触发android中的clickOnAndroid方法
+        function clickOnHtml () {
+                var fileName = window.demo.clickOnAndroid();
+                //wave2(fileName);
+        }
+        
+        //
+        function revert() {
+                alert('cc');
+                document.getElementById("droid").innerHTML ="aa2";
+        }
+
+</script>
+<style type="text/css">
+body{
+font:14px;
+color:#333;
+line-height: 1.8em;
+margin: 0;
+padding: 0;
+width:480px;
+}
+html{
+outline: none;
+hide-focus:expression(this.hideFocus=true);
+}
+</style>
+</head>
+<body>
+        <div>
+                <li>
+                        <p>Here is the funtion to TakePhoto in html</p>
+                        <!-- 通过"window.demo.clickOnAndroid"触发android中的clickOnAndroid方法 -->
+                        <a onClick="window.demo.clickOnAndroid()">TakePhoto</a><br/>
+                        <span id='droid'>Photopath:</span>
+                        <br/>
+                        <br/>
+                        <p>Here is the funtion to revert in html</p>
+                        <input type="button" onclick="revert();" value="Revert" /> <br/>
+                        <input type="button" onclick="javascript:window.top.location.reload()" value="Refresh" />
+                </li>
+        </div>
+        <div>
+                <p id="picpath">PhotoPath</p>
+                <img alt="ddd" id="pic0" width="200" height="200" src="/storage/sdcard0/webview_camera/testimg23.8156950140954181.jpg" />
+        </div>
+</body>
+</html>

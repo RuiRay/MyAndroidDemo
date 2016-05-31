@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">VariousDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_vibrator">VibratorActivity</string>
+    <string name="title_activity_syllabus">SyllabusActivity</string>
+    <string name="title_activity_intent_test">IntentTestActivity</string>
+    <string name="title_activity_volume">VolumeActivity</string>
+    <string name="title_activity_volume_observer">VolumeObserverActivity</string>
+    <string name="title_activity_max_app_menory">MaxAppMenoryActivity</string>
+    <string name="title_activity_launch_server">LaunchServerActivity</string>
+    <string name="title_activity_logger">LoggerActivity</string>
+    <string name="title_activity_font_test">FontTestActivity</string>
+    <string name="title_activity_web_view">WebViewActivity</string>
+    <string name="title_activity_web_capture">WebCaptureActivity</string>
+    <string name="title_activity_web_select_pic">WebSelectPicActivity</string>
+    <string name="title_activity_phone_gap">PhoneGapActivity</string>
+    <string name="title_activity_code_layout">CodeLayoutActivity</string>
+    <string name="title_activity_market">MarketActivity</string>
+    <string name="title_activity_bright_view">BrightViewActivity</string>
+    <string name="title_activity_color_seek_bar">ColorSeekBarActivity</string>
+    <string name="short_voice">低音</string>
+    <string name="middle_voice">中音</string>
+    <string name="high_voice">高音</string>
+
+    <color name="common_theme">#50BDE7</color>
+    <color name="common_theme_press">#8850BDE7</color>
+    <color name="common_gray">#616161</color>
+    <color name="common_gray_press">#88616161</color>
+    <color name="common_white_gray">#6DFFFFFF</color>
+    <color name="common_white_gray_weak">#37FFFFFF</color>
+    <color name="common_background">#EFEFEF</color>
+    <color name="player_list_font">#9950BDE7</color>
+    <color name="dialog_white_bg">#DDFFFFFF</color>
+
+    <string name="title_activity_equalizer_view">EqualizerViewActivity</string>
+    <string name="title_activity_text_view_link">TextViewLinkActivity</string>
+    <string name="title_activity_horizontal_picker">HorizontalPickerActivity</string>
+
+    <string-array name="music_eq_type">
+        <item>关闭</item>
+        <item>自定义</item>
+        <item>流行</item>
+        <item>重低音</item>
+        <item>人声</item>
+        <item>摇滚</item>
+        <item>古典</item>
+        <item>爵士</item>
+        <item>舞曲</item>
+        <item>电子</item>
+    </string-array>
+
+    <string name="title_activity_blur">BlurActivity</string>
+    <string name="title_activity_fm">FMActivity</string>
+    <string name="title_activity_get_local">GetLocalActivity</string>
+    <string name="title_activity_color_tip_image_view">ColorTipImageViewActivity</string>
+    <string name="title_activity_shake">ShakeActivity</string>
+    <string name="title_activity_weather">WeatherActivity</string>
+    <string name="title_activity_rotate_anim">RotateAnimActivity</string>
+
+</resources>

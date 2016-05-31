@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>你好 PhoneGap</title>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script type="text/javascript">
+	function judgePlatform(){
+		alert("judgePlatform");
+		switch ( plus.os.name ) {
+			case "Android":
+			// Android平台: plus.android.*
+			alert("Android OS");
+			break;
+			case "iOS":
+			// iOS平台: plus.ios.*
+			alert("iOS OS");
+			break;
+			default:
+			// 其它平台
+			alert("Other OS");
+			break;
+		}
+	}
+	
+	   
+   function callPhone(){  
+		// 导入Activity、Intent类
+		var Intent = plus.android.importClass("android.content.Intent");
+		var Uri = plus.android.importClass("android.net.Uri");
+		// 获取主Activity对象的实例
+		var main = plus.android.runtimeMainActivity();
+		// 创建Intent
+		var uri = Uri.parse("tel:10086");
+		var call = new Intent("android.intent.action.CALL",uri);
+		// 调用startActivity方法拨打电话
+		main.startActivity( call );
+   } 
+   
+   function alertHello(){
+		alert("hello");
+   }
+   </script>
+</head>
+<body>
+<h1>你好 PhoneGap</h1>
+
+
+<button id='btntest1' onclick='judgePlatform()'>CallPlatform</button><br/>
+<button id='btntest1' onclick='callPhone()'>CallPhone</button><br/>
+<button id='btntest1' onclick='alertHello()'>alertHello</button><br/>
+</body>
+</html>

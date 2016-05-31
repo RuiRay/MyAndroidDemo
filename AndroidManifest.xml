@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ionesmile.variousdemo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 定位权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- 访问网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 调用摄像头的权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 文件系统权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- SD卡写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name="com.ionesmile.variousdemo.appliction.CustomApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ionesmile.variousdemo.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.apache.cordova.DroidGap"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ionesmile.variousdemo.VibratorActivity"
+            android:label="@string/title_activity_vibrator" >
+        </activity>
+        <activity
+            android:name="com.ionesmile.variousdemo.SyllabusActivity"
+            android:label="@string/title_activity_syllabus" >
+        </activity>
+        <activity
+            android:name="com.ionesmile.variousdemo.DeviceInfoActivity"
+            android:label="@string/title_activity_intent_test" >
+        </activity>
+        <activity
+            android:name="com.ionesmile.variousdemo.VolumeActivity"
+            android:label="@string/title_activity_volume" >
+        </activity>
+        <activity
+            android:name="com.ionesmile.variousdemo.VolumeObserverActivity"
+            android:label="@string/title_activity_volume_observer" >
+        </activity>
+        <activity
+            android:name="com.ionesmile.variousdemo.MaxAppMenoryActivity"
+            android:label="@string/title_activity_max_app_menory" >
+        </activity>
+        <activity
+            android:name="com.ionesmile.variousdemo.LaunchServerActivity"
+            android:label="@string/title_activity_launch_server" >
+        </activity>
+
+        <service android:name="com.ionesmile.variousdemo.service.LaunchTestService" >
+        </service>
+
+        <activity
+            android:name="com.ionesmile.variousdemo.LoggerActivity"
+            android:label="@string/title_activity_logger" >
+        </activity>
+        <activity
+            android:name="com.ionesmile.variousdemo.FontTestActivity"
+            android:label="@string/title_activity_font_test" >
+        </activity>
+        <activity
+            android:name="com.ionesmile.variousdemo.WebViewActivity"
+            android:label="@string/title_activity_web_view" >
+        </activity>
+        <activity
+            android:name="com.ionesmile.variousdemo.activity.failure.WebCaptureActivity"
+            android:label="@string/title_activity_web_capture" >
+        </activity>
+        <activity
+            android:name="com.ionesmile.variousdemo.PhoneGapActivity"
+            android:label="@string/title_activity_phone_gap" >
+        </activity>
+        <activity
+            android:name="com.ionesmile.variousdemo.CodeLayoutActivity"
+            android:label="@string/title_activity_code_layout" >
+        </activity>
+        <activity
+            android:name="com.ionesmile.variousdemo.MarketActivity"
+            android:label="@string/title_activity_market" >
+        </activity>
+        <activity
+            android:name="com.ionesmile.variousdemo.AudioEqualizerActivity"
+            android:label="@string/title_activity_market" >
+        </activity>
+        <activity
+            android:name="com.ionesmile.variousdemo.BrightViewActivity"
+            android:label="@string/title_activity_bright_view" >
+        </activity>
+        <activity
+            android:name="com.ionesmile.variousdemo.ColorSeekBarActivity"
+            android:label="@string/title_activity_color_seek_bar" >
+        </activity>
+        <activity
+            android:name="com.ionesmile.variousdemo.EqualizerViewActivity"
+            android:label="@string/title_activity_equalizer_view" >
+        </activity>
+        <activity
+            android:name="com.ionesmile.variousdemo.TextViewLinkActivity"
+            android:label="@string/title_activity_text_view_link" >
+        </activity>
+        <activity
+            android:name="com.ionesmile.variousdemo.HorizontalPickerActivity"
+            android:label="@string/title_activity_horizontal_picker" >
+        </activity>
+        <activity
+            android:name="com.ionesmile.variousdemo.BlurActivity"
+            android:label="@string/title_activity_blur" >
+        </activity>
+        <activity
+            android:name="com.ionesmile.variousdemo.FMActivity"
+            android:label="@string/title_activity_fm" >
+        </activity>
+        <activity
+            android:name="com.ionesmile.variousdemo.GetLocalActivity"
+            android:label="@string/title_activity_get_local" >
+        </activity>
+        <activity
+            android:name="com.ionesmile.variousdemo.ColorTipImageViewActivity"
+            android:label="@string/title_activity_color_tip_image_view" >
+        </activity>
+        <activity
+            android:name="com.ionesmile.variousdemo.ShakeActivity"
+            android:label="@string/title_activity_shake" >
+        </activity>
+        <activity
+            android:name="com.ionesmile.variousdemo.WeatherActivity"
+            android:label="@string/title_activity_weather" >
+        </activity>
+        <activity
+            android:name="com.ionesmile.variousdemo.RotateAnimActivity"
+            android:label="@string/title_activity_rotate_anim" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="colorKnobView">
+        <attr name="colorRingWidth" format="dimension" />
+        <attr name="knobInterval" format="dimension" />
+        <attr name="iswhiteLight" format="boolean" />
+    </declare-styleable>
+    
+    <declare-styleable name="brightView">
+        <attr name="viewBackground" format="color" />
+        <attr name="dotNumber" format="integer" />
+        <attr name="dotRadius" format="dimension" />
+        <attr name="radianRadius" format="dimension" />
+    </declare-styleable>
+    
+    <declare-styleable name="ColorSeekBarView">
+        <attr name="csbv_line_width" format="dimension" />
+        <attr name="seekBarType">
+            <enum name="colorful" value="0" />
+      		<enum name="white" value="1" />
+      		<enum name="bright" value="2" />
+        </attr>
+    </declare-styleable>
+    
+    
+    <declare-styleable name="HorizontalPicker">
+        <attr name="android:textColor" />
+        <attr name="android:textSize" />
+        <attr name="values" format="reference" />
+        <attr name="android:ellipsize" />
+        <attr name="android:marqueeRepeatLimit" />
+        <attr name="dividerSize" format="dimension" />
+        <attr name="sideItems" format="integer" />
+    </declare-styleable>
+
+    <attr name="horizontalPickerStyle" format="reference" />
+    
+    
+    <declare-styleable name="SlidingLayer">
+        <attr name="closeOnTapEnabled" format="boolean"/>
+        <attr name="openOnTapEnabled" format="boolean"/>
+        <attr name="offsetWidth" format="dimension" />
+        <attr name="stickTo" format="enum">
+            <enum name="auto" value="0"/>
+            <enum name="right" value="-1"/>
+            <enum name="left" value="-2"/>
+            <enum name="middle" value="-3"/>
+            <enum name="top" value="-4"/>
+            <enum name="bottom" value="-5"/>
+        </attr>
+    </declare-styleable>
+    
+    
+    <declare-styleable name="PxBlurringView">
+        <attr name="blurRadius" format="integer" />
+        <attr name="downsampleFactor" format="integer" />
+        <attr name="overlayColor" format="color" />
+    </declare-styleable>
+
+</resources>

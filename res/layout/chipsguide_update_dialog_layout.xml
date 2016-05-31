@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/update_dialog_bg"
+    android:padding="10dp"
+    >
+
+    <!-- 对话框标题，必须存在为此id的TextView或其子类。 -->
+    <TextView
+        android:id="@+id/chipsguide_update_dialog_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="" />
+    
+    <!-- 对话框内容，必须存在为此id的TextView或其子类 -->
+    <TextView
+        android:id="@+id/chipsguide_update_dialog_msg_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="" 
+        android:layout_below="@+id/chipsguide_update_dialog_title_tv"
+        android:textSize="18sp"
+        android:textColor="@android:color/darker_gray"
+        />
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_below="@+id/chipsguide_update_dialog_msg_tv"
+	    android:gravity="center_horizontal"
+	    android:layout_marginTop="10dp"
+	    >
+	    
+	    <!-- 对话框取消按钮，必须存在为此id的TextView或其子类 -->
+	    <Button 
+	        android:id="@+id/chipsguide_update_dialog_negative_btn"
+	        android:layout_width="0dp"
+	        android:layout_height="30dp"
+	        android:layout_weight="1"
+	        android:singleLine="true"
+	        android:textSize="15sp"
+	        android:textColor="@android:color/white"
+	        android:background="@drawable/update_dialog_negbtn"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginLeft="10dp"
+	        />
+	    
+	    <!-- 对话框确定按钮，必须存在为此id的TextView或其子类 -->
+	    <Button 
+	        android:id="@+id/chipsguide_update_dialog_positive_btn"
+	        android:layout_width="0dp"
+	        android:layout_height="30dp"
+	        android:layout_weight="1"
+	        android:singleLine="true"
+	        android:textSize="15sp"
+	        android:textColor="@android:color/white"
+	        android:background="@drawable/update_dialog_posibtn"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginLeft="10dp"
+	        />
+	    
+	</LinearLayout>
+</RelativeLayout>
