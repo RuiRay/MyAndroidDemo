@@ -16,19 +16,20 @@
         android:textSize="30sp" />
 
     <TextView
+        android:id="@+id/tv_content_source"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:text="0123456789ABCDXYZabcdxyz你好步部。...???@@@"
-        android:textSize="30sp" />
+        android:textSize="16sp" />
 
     <com.ionesmile.variousdemo.view.AlwaysMarqueeTextView
         android:id="@+id/tv_marquee"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="50dp"
+        android:layout_below="@+id/tv_content_source"
+        android:layout_marginTop="20dp"
         android:ellipsize="marquee"
         android:focusable="true"
         android:marqueeRepeatLimit="marquee_forever"
@@ -36,7 +37,5 @@
         android:singleLine="true"
         android:text="0123456789ABCDXYZabcdxyz你好步部。...???@@@"
         android:textSize="30sp" />
-    
-    
 
 </RelativeLayout>

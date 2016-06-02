@@ -30,3 +30,4 @@ proguard/
 
 # Android Studio captures folder
 captures/
+res/raw/test_music.mp3
